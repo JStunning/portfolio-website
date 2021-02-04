@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import AppShowcase from './components/AppShowcase'
 import Skills from './components/Skills';
 import Jobs from './components/Jobs';
-import Projects from './components/Projects'
+import Projects from './components/Projects';
 import Footer from './components/Footer';
 
 

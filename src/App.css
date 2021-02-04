@@ -15,6 +15,7 @@ body {
 
 /* Navbar */
 .Toolbar {
+  position: static;
   display: flex;
   border: 5px red solid;
 }
@@ -25,6 +26,7 @@ body {
 
 /* Showcase */
 .App-showcase {
+  position: static;
   background-color: #282c34;
   background-image: url("https://uploads.visitseattle.org/2016/05/16100628/Utrip_6View-from-Kerry-Park.jpg");
   background-size: cover;
@@ -117,6 +119,27 @@ body {
   border: 3px solid black;
   border-radius: 1%;
   margin: 5% 0 5% 0;
+}
+
+/* Cat Fact */
+.cat-fact-div {
+  border: 5px solid red;
+  padding: 0;
+  margin: 0;
+}
+
+.cat-facts {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cat-fact {
+  list-style-type: none;
+  border: 5px solid red;
+  padding: 5px;
+  width: 75%;
+  background-color: orange;
 }
 
 /* Footer */

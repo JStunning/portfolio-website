@@ -9,9 +9,11 @@ const Projects = () => {
       <div className="project-cards">
         <Card className="project">
           <CardContent>
-            <h3>Project Name</h3>
-            <img className="project-img" src="https://www.gettingsmart.com/wp-content/uploads/2017/06/Program-Code-Feature-Image.jpg" alt="code"></img>
-            <Typography>Javascript</Typography>
+            <h3>Adventureon</h3>
+            <a href="https://jackstunning.github.io/textAdventure/"><img className="project-img" src="https://i.imgur.com/fmM8ShI.jpeg" alt="code"></img></a>
+            <Typography>Html</Typography>
+            <Typography>Css</Typography>
+            <Typography>Jquery</Typography>
           </CardContent>
         </Card>
         <Card className="project">

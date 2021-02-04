@@ -1,35 +1,28 @@
-import { React } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, Typography, IconButton } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
+import { useState } from 'react';
+import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import NavbarMenu from './NavbarMenu';
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-}));
+import CatFact from './CatFact'
 
 const Navbar = () => {
+  const [catFactActive, setCatFactActive] = useState(false);
 
-  const classes = useStyles();
+  const isCatFactActive = (data) => {
+    setCatFactActive(data)
+  }
+
   return (
-    <div className={classes.root}>
+    <div>
       <AppBar position="static">
         <Toolbar variant="dense">
-          {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton> */}
-          <NavbarMenu />
+          <NavbarMenu CatFactActivity={isCatFactActive}/>
           <Typography variant="h6" color="inherit">
             Stunning
           </Typography>
-
         </Toolbar>
       </AppBar>
+      <div>
+        <CatFact props={catFactActive}/>
+      </div>
     </div>
   )
 }
