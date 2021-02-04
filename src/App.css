@@ -123,7 +123,7 @@ body {
 
 /* Cat Fact */
 .cat-fact-div {
-  border: 5px solid red;
+  position: absolute;
   padding: 0;
   margin: 0;
 }

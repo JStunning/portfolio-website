@@ -49,7 +49,7 @@ const CatFact = (props) => {
             {items.map(item => (
               <li key={item._id} className="cat-fact">
                 {item.text} {item.createdAt}
-                <Button>Yo</Button>
+                <Button>X</Button>
               </li>
             ))}
           </ul>
