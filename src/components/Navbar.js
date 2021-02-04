@@ -6,11 +6,8 @@ import CatFact from './CatFact'
 const Navbar = () => {
   const [catFactActive, setCatFactActive] = useState(false);
 
-  console.log("navBar catFactActive", catFactActive)
-
   // NavMenu
   const isCatFactActive = (data) => {
-    console.log("data", data)
     setCatFactActive(data)
   }
 

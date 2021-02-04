@@ -7,11 +7,6 @@ const CatFact = (props) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
   const [isActive, setIsActive] = useState(false);
-  console.log("CatFact props", props)
-
-  // useEffect(() => {
-  //   setIsActive(props.props)
-  // }, [props.props])
 
   if(props.props === true && isActive !== true){
     setIsActive(true)
@@ -41,8 +36,6 @@ const CatFact = (props) => {
         }
       )
   }, [])
-
-  console.log("isA",isActive)
 
   if (error) {
     return <div>Error: {error.message}</div>;

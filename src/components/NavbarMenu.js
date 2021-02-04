@@ -24,13 +24,6 @@ const NavbarMenu = (props) => {
     setAnchorEl(null);
   };
 
-  // useEffect(() => {
-  //   props.CatFactActivity(catFactActive)
-  // }, [props, catFactActive])
-
-  // props.CatFactActivity(true)
-  console.log("navbarmenuprops", props)
-
   return (
     <div>
       <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
