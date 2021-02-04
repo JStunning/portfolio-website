@@ -41,8 +41,8 @@ const NavbarMenu = () => {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose}>Projects</MenuItem>
-        <MenuItem onClick={handleClose}>calcultor</MenuItem>
-        <MenuItem onClick={handleClose}>spaceX launch data</MenuItem>
+        <MenuItem onClick={handleClose}>Calculator</MenuItem>
+        <MenuItem onClick={handleClose}>Clock</MenuItem>
       </Menu>
     </div>
   );

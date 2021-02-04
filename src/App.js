@@ -1,18 +1,25 @@
 import './App.css';
 import Navbar from './components/Navbar';
+import AppShowcase from './components/AppShowcase'
 import Skills from './components/Skills';
+import Jobs from './components/Jobs';
+import Projects from './components/Projects'
 import Footer from './components/Footer';
-import { Button } from '@material-ui/core';
+
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className="App-showcase">
-          <Button variant="contained" >Default</Button>
-        </div>
+      <AppShowcase />
       <div>
         <Skills />
+      </div>
+      <div>
+        <Jobs />
+      </div>
+      <div>
+        <Projects />
       </div>
       <Footer />
     </div>

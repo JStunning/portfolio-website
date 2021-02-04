@@ -1,6 +1,8 @@
 body {
   background-color: #3f51b5;
+  width: 100vw;
 }
+
 *{
   padding: 0;
   margin: 0;
@@ -8,8 +10,10 @@ body {
 
 .App {
   text-align: center;
+  width: 100vw;
 }
 
+/* Navbar */
 .Toolbar {
   display: flex;
   border: 5px red solid;
@@ -19,21 +23,40 @@ body {
   padding-left: 50%;
 }
 
+/* Showcase */
 .App-showcase {
   background-color: #282c34;
-  min-height: 94vh;
+  background-image: url("https://uploads.visitseattle.org/2016/05/16100628/Utrip_6View-from-Kerry-Park.jpg");
+  background-size: cover;
+  min-height: 90vh;
+  max-height: 95vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
+.showcase-overlay {
+  max-height: 75vh;
+  width: 90vw;
+  background: rgba(0,0,0,0.5);
+  padding: 5%;
+}
+
+.App-showcase p {
+  padding: 25% 5% 2% 5%;
+}
+
+/* Skills */
 .Skills {
   background-color: #3f51b5;
   color: white;
-  min-height: 80vh;
+  min-height: 10vh;
+  padding: 2%;
 }
 
 .Skills-cards {
@@ -42,15 +65,62 @@ body {
   justify-content: center;
 }
 
-.Languages {
-  max-width: 400px;
-  min-width: 200px;
+.skill {
+  max-width: 800px;
+  min-width: 400px;
   margin: 1%;
 }
 
-.Technologies {
-  max-width: 800px;
-  min-width: 200px;
+/* Jobs */
+.Jobs {
+  background-color: #3f51b5;
+  color: white;
+  min-height: 10vh;
+  padding: 2%;
+}
+
+.jobs-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.job {
+  max-width: 600px;
+  min-width: 300px;
+  margin: 1%;
+}
+
+/* Projects */
+.Projects {
+  background-color: #282c34;
+  color: white;
+  min-height: 10vh;
+  padding: 2%;
+}
+
+.project-cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.project {
+  max-width: 600px;
+  min-width: 300px;
+  margin: 1%;
+}
+
+.project-img {
+  width: 300px;
+  height: 250px;
+  border: 3px solid black;
+  border-radius: 1%;
+  margin: 5% 0 5% 0;
+}
+
+/* Footer */
+.Footer {
   margin: 1%;
 }
 
@@ -58,4 +128,76 @@ body {
   margin: 1%;
   color: white;
   text-decoration: none;
+}
+
+/* Mobile Friendly */
+@media (max-width: 770px) {
+  * {
+    width: 200px;
+  }
+
+  body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  .App {
+    width: 80vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  .Toolbar {
+    display: inline;
+    width: 50vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .App-showcase {
+    width: 95vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .showcase-overlay {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .Skills-cards {
+    flex-direction: column;
+  }
+
+  .jobs-cards {
+    flex-direction: column;
+  }
+
+  .Projects {
+    width: 90vw;
+    text-align: center;
+  }
+
+  .project-cards {
+    flex-direction: column;
+  }
+
+  .skill {
+    width: 95vw;
+  }
+
+  .job {
+    width: 97vw;
+  }
+
+  .project {
+    width: 97vw;
+  }
+
+  .Footer {
+    display: flex;
+  }
 }
