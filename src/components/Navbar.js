@@ -6,22 +6,26 @@ import CatFact from './CatFact'
 const Navbar = () => {
   const [catFactActive, setCatFactActive] = useState(false);
 
+  console.log("navBar catFactActive", catFactActive)
+
+  // NavMenu
   const isCatFactActive = (data) => {
+    console.log("data", data)
     setCatFactActive(data)
   }
 
   return (
     <div>
-      <AppBar position="static">
-        <Toolbar variant="dense">
-          <NavbarMenu CatFactActivity={isCatFactActive}/>
+      <AppBar position="fixed">
+        <Toolbar variant="dense" className="Toolbar">
+          <NavbarMenu CatFactActivity={isCatFactActive} closeCat={catFactActive}/>
           <Typography variant="h6" color="inherit">
             Stunning
           </Typography>
         </Toolbar>
       </AppBar>
       <div>
-        <CatFact props={catFactActive}/>
+        <CatFact props={catFactActive} setClose={isCatFactActive}/>
       </div>
     </div>
   )

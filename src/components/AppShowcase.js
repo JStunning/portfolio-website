@@ -10,7 +10,7 @@ const AppShowcase = () => {
         </h1>
         <p>Interested in working together? Feel free to contact me for any project or collaboration.</p>
         {/* <Button variant="contained" >Default</Button> */}
-        <FiChevronsDown />
+        <a id="chevron" href="#chevron"><FiChevronsDown /></a>
       </div>
     </div>
   )

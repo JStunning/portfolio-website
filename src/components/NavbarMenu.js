@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton'
@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
 const NavbarMenu = (props) => {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = useState(null);
-  const [catFactActive, setCatFactActive] = useState(false);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -25,12 +24,12 @@ const NavbarMenu = (props) => {
     setAnchorEl(null);
   };
 
-  const handleCatFact = () => {
-    setCatFactActive(!catFactActive);
-  };
+  // useEffect(() => {
+  //   props.CatFactActivity(catFactActive)
+  // }, [props, catFactActive])
 
-  props.CatFactActivity(catFactActive)
-  console.log("catFactActive", catFactActive);
+  // props.CatFactActivity(true)
+  console.log("navbarmenuprops", props)
 
   return (
     <div>
@@ -49,7 +48,7 @@ const NavbarMenu = (props) => {
         <MenuItem onClick={handleClose}>Projects</MenuItem>
         <MenuItem onClick={handleClose}>Calculator</MenuItem>
         <MenuItem onClick={handleClose}>Clock</MenuItem>
-        <MenuItem onClick={() => {handleCatFact(); handleClose()}}>Cat Fact</MenuItem>
+        <MenuItem onClick={() => {props.CatFactActivity(true); handleClose()}}>Cat Fact</MenuItem>
       </Menu>
     </div>
   );

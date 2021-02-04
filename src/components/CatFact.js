@@ -9,9 +9,16 @@ const CatFact = (props) => {
   const [isActive, setIsActive] = useState(false);
   console.log("CatFact props", props)
 
-  useEffect(() => {
-    setIsActive(props.props)
-  }, [props.props])
+  // useEffect(() => {
+  //   setIsActive(props.props)
+  // }, [props.props])
+
+  if(props.props === true && isActive !== true){
+    setIsActive(true)
+  } 
+  if(props.props === false && isActive !== false){
+    setIsActive(false)
+  }
 
   // Note: the empty deps array [] means
   // this useEffect will run once
@@ -35,7 +42,7 @@ const CatFact = (props) => {
       )
   }, [])
 
-    console.log("isA",isActive)
+  console.log("isA",isActive)
 
   if (error) {
     return <div>Error: {error.message}</div>;
@@ -48,8 +55,8 @@ const CatFact = (props) => {
           <ul className="cat-facts">
             {items.map(item => (
               <li key={item._id} className="cat-fact">
-                {item.text} {item.createdAt}
-                <Button>X</Button>
+                {item.text}
+                <Button onClick={() => {props.setClose(false)}}>X</Button>
               </li>
             ))}
           </ul>

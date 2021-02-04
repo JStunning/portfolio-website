@@ -15,9 +15,7 @@ body {
 
 /* Navbar */
 .Toolbar {
-  position: static;
   display: flex;
-  border: 5px red solid;
 }
 
 .Burger-button {
@@ -39,6 +37,7 @@ body {
   font-size: calc(10px + 2vmin);
   color: white;
   margin: 0;
+  margin-top: 3.2%;
   padding: 0;
 }
 
@@ -50,12 +49,17 @@ body {
 }
 
 .App-showcase p {
-  padding: 25% 5% 2% 5%;
+  padding: 25% 5% 5% 5%;
+}
+
+#chevron {
+  color: white;
+  text-decoration: none;
 }
 
 /* Skills */
 .Skills {
-  background-color: #3f51b5;
+  background-color: #282c34;
   color: white;
   min-height: 10vh;
   padding: 2%;
@@ -126,6 +130,8 @@ body {
   position: absolute;
   padding: 0;
   margin: 0;
+  margin-top: 5%;
+  margin-left: 10%;
 }
 
 .cat-facts {
