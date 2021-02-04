@@ -7,6 +7,8 @@ const CatFact = (props) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
   const [isActive, setIsActive] = useState(false);
+  const [imageCount, setImageCount] = useState(0);
+  console.log("imageCount", imageCount)
 
   if(props.props === true && isActive !== true){
     setIsActive(true)
@@ -46,12 +48,20 @@ const CatFact = (props) => {
       <Draggable>
         <div className="cat-fact-div">
           <ul className="cat-facts">
-            {items.map(item => (
+            {/* {items.map(item => (
               <li key={item._id} className="cat-fact">
                 {item.text}
                 <Button onClick={() => {props.setClose(false)}}>X</Button>
               </li>
-            ))}
+            ))} */}
+            {<li key={items[imageCount]._id} className="cat-fact">
+              <div className="cat-fact-x-button-div">
+                <button className="cat-fact-x-button" onClick={() => {props.setClose(false); setImageCount(imageCount === 4 ? 0 : imageCount + 1)}}><span className="cat-fact-x-button-text">x</span></button>
+              </div>
+              <div className="cat-fact-text">
+                {items[imageCount].text}
+              </div>
+            </li>}
           </ul>
         </div>
       </Draggable>
