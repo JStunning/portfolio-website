@@ -38,10 +38,9 @@ const NavbarMenu = (props) => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>Projects</MenuItem>
-        <MenuItem onClick={handleClose}>Calculator</MenuItem>
-        <MenuItem onClick={() => {props.clockActivity(true);handleClose()}}>Clock</MenuItem>
-        <MenuItem onClick={() => {props.CatFactActivity(true); handleClose()}}>Cat Fact</MenuItem>
+        <MenuItem onClick={() => {props.calculatorVisibility(true); handleClose()}}>Calculator</MenuItem>
+        <MenuItem onClick={() => {props.clockVisibility(true); handleClose()}}>Clock</MenuItem>
+        <MenuItem onClick={() => {props.catFactVisibility(true); handleClose()}}>Cat Fact</MenuItem>
       </Menu>
     </div>
   );

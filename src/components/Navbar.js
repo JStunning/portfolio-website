@@ -1,36 +1,44 @@
 import { useState } from 'react';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import NavbarMenu from './NavbarMenu';
+import Calculator from './Calculator';
 import CatFact from './CatFact';
 import Clock from './Clock';
 
 const Navbar = () => {
-  const [catFactActive, setCatFactActive] = useState(false);
-  const [clockShown, setClockShown] = useState(false);
+  const [catFactVisible, setCatFactVisible] = useState(false);
+  const [clockVisible, setClockVisible] = useState(false);
+  const [calculatorVisible, setCalculatorVisible] = useState(false);
+
+  // Calculator
+  const isCalculatorVisible = (data) => {
+    setCalculatorVisible(data);
+  }
 
   // Cat fact
-  const isCatFactActive = (data) => {
-    setCatFactActive(data)
+  const isCatFactVisible = (data) => {
+    setCatFactVisible(data);
   }
 
   // Clock
-  const isClockActive = (data) => {
-    setClockShown(data)
+  const isClockVisible = (data) => {
+    setClockVisible(data);
   }
 
   return (
     <div>
       <AppBar position="fixed">
         <Toolbar variant="dense" className="Toolbar">
-          <NavbarMenu CatFactActivity={isCatFactActive} closeCat={catFactActive} clockActivity={isClockActive}/>
+          <NavbarMenu calculatorVisibility={isCalculatorVisible} catFactVisibility={isCatFactVisible} clockVisibility={isClockVisible}/>
           <Typography variant="h6" color="inherit">
             Stunning
           </Typography>
         </Toolbar>
       </AppBar>
       <div>
-        <CatFact props={catFactActive} setClose={isCatFactActive}/>
-        <Clock props={clockShown} setClose={isClockActive}/>
+        <Calculator props={calculatorVisible} setClose={isCalculatorVisible}/>
+        <CatFact props={catFactVisible} setClose={isCatFactVisible}/>
+        <Clock props={clockVisible} setClose={isClockVisible}/>
       </div>
     </div>
   )

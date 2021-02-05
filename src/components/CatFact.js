@@ -43,17 +43,11 @@ const CatFact = (props) => {
     return <div>Loading...</div>;
   } else if(isActive === true){
     return (
-      <Draggable>
+      <Draggable handle=".handle">
         <div className="cat-fact-div">
           <ul className="cat-facts">
-            {/* {items.map(item => (
-              <li key={item._id} className="cat-fact">
-                {item.text}
-                <Button onClick={() => {props.setClose(false)}}>X</Button>
-              </li>
-            ))} */}
             {<li key={items[imageCount]._id} className="cat-fact">
-              <div className="cat-fact-x-button-div">
+              <div className="cat-fact-x-button-div handle">
                 <p className="cat-fact-title"><strong>CatFact</strong></p>
                 <button className="cat-fact-x-button" onClick={() => {props.setClose(false); setImageCount(imageCount === 4 ? 0 : imageCount + 1)}}><span className="cat-fact-x-button-text">x</span></button>
               </div>
