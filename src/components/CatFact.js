@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import Draggable from 'react-draggable';
-import Button from '@material-ui/core/Button';
 
 const CatFact = (props) => {
   const [error, setError] = useState(null);
@@ -8,7 +7,6 @@ const CatFact = (props) => {
   const [items, setItems] = useState([]);
   const [isActive, setIsActive] = useState(false);
   const [imageCount, setImageCount] = useState(0);
-  console.log("imageCount", imageCount)
 
   if(props.props === true && isActive !== true){
     setIsActive(true)
@@ -56,6 +54,7 @@ const CatFact = (props) => {
             ))} */}
             {<li key={items[imageCount]._id} className="cat-fact">
               <div className="cat-fact-x-button-div">
+                <p className="cat-fact-title"><strong>CatFact</strong></p>
                 <button className="cat-fact-x-button" onClick={() => {props.setClose(false); setImageCount(imageCount === 4 ? 0 : imageCount + 1)}}><span className="cat-fact-x-button-text">x</span></button>
               </div>
               <div className="cat-fact-text">

@@ -8,16 +8,19 @@ const Skills = () => {
     <div id="Skills" className="Skills">
       <h2>Skills</h2>
       <div className="Skills-cards">
-        <Card className="skill">
-          <CardContent>
-            <h3>Languages</h3>
-            <Typography>Javascript</Typography>
-            <Typography>HTML</Typography>
-            <Typography>CSS</Typography>
-            <Typography>C#</Typography>
-            <Typography>Python</Typography>
-          </CardContent>
-        </Card>
+        <div className="skill-div">
+          <Card className="skill">
+            <CardContent>
+              <h3>Languages</h3>
+              <Typography>Javascript</Typography>
+              <Typography>HTML</Typography>
+              <Typography>CSS</Typography>
+              <Typography>C#</Typography>
+              <Typography>Python</Typography>
+            </CardContent>
+          </Card>
+        </div>
+        <div className="skill-div">
         <Card className="skill">
           <CardContent>
             <h3>Other Technologies</h3>
@@ -29,6 +32,7 @@ const Skills = () => {
             <Typography>MongoDB</Typography>
           </CardContent>
         </Card>
+        </div>
       </div>
     </div>
   ) 

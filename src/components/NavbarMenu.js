@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton'
@@ -40,7 +40,7 @@ const NavbarMenu = (props) => {
       >
         <MenuItem onClick={handleClose}>Projects</MenuItem>
         <MenuItem onClick={handleClose}>Calculator</MenuItem>
-        <MenuItem onClick={handleClose}>Clock</MenuItem>
+        <MenuItem onClick={() => {props.clockActivity(true);handleClose()}}>Clock</MenuItem>
         <MenuItem onClick={() => {props.CatFactActivity(true); handleClose()}}>Cat Fact</MenuItem>
       </Menu>
     </div>
