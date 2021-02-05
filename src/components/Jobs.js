@@ -5,7 +5,7 @@ import { Typography } from '@material-ui/core';
 const Jobs = () => {
   return (
     <div className="Jobs">
-      <h2>Jobs</h2>
+      <h2><u>Jobs</u></h2>
       <div className="jobs-cards">
         <div className="job-div">
           <Card className="job">
