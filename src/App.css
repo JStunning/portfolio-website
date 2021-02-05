@@ -308,6 +308,48 @@ h2 {
   font-family: monospace;
 }
 
+/* Motivational Quote */
+.MotivationalQuote {
+  border: 5px solid gray;
+  background-color: lightgray;
+  min-width: 500px;
+  min-height: 250px;
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 10%;
+  box-shadow: 5px 10px 8px #141414;
+  border-radius: 1%;
+}
+
+.motivational-quote-x-button-div {
+  text-align: end;
+  border-bottom: 5px solid gray;
+}
+
+.motivational-quote-title {
+  float: left;
+  padding: 1%;
+}
+
+.motivational-quote-x-button {
+  border: 3px solid gray;
+  height: 30px;
+  padding: 0.75% 4% 1.75% 4%;
+  margin: 0;
+  background-color: lightgray;
+  border-radius: 3.75%;
+}
+
+.motivational-quote-text {
+  color: black;
+  padding: 5%;
+  font-size: 28px;
+}
+
+.quote-author {
+  padding: 5%;
+}
+
 /* Footer */
 .Footer {
   margin: 5px;

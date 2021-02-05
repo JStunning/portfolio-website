@@ -4,11 +4,13 @@ import NavbarMenu from './NavbarMenu';
 import Calculator from './Calculator';
 import CatFact from './CatFact';
 import Clock from './Clock';
+import MotivationalQuote from './MotivationalQuote';
 
 const Navbar = () => {
+  const [calculatorVisible, setCalculatorVisible] = useState(false);
   const [catFactVisible, setCatFactVisible] = useState(false);
   const [clockVisible, setClockVisible] = useState(false);
-  const [calculatorVisible, setCalculatorVisible] = useState(false);
+  const [motivationalQuoteVisible, setMotivationalQuoteVisible] = useState(false);
 
   // Calculator
   const isCalculatorVisible = (data) => {
@@ -25,11 +27,21 @@ const Navbar = () => {
     setClockVisible(data);
   }
 
+  // Motivational Quote
+  const isMotivationalQuoteVisible = (data) => {
+    setMotivationalQuoteVisible(data)
+  }
+
   return (
     <div>
       <AppBar position="fixed">
         <Toolbar variant="dense" className="Toolbar">
-          <NavbarMenu calculatorVisibility={isCalculatorVisible} catFactVisibility={isCatFactVisible} clockVisibility={isClockVisible}/>
+          <NavbarMenu 
+            calculatorVisibility={isCalculatorVisible} 
+            catFactVisibility={isCatFactVisible} 
+            clockVisibility={isClockVisible}
+            motivationalQuoteVisibility={isMotivationalQuoteVisible}
+          />
           <Typography variant="h6" color="inherit">
             Stunning
           </Typography>
@@ -39,6 +51,7 @@ const Navbar = () => {
         <Calculator props={calculatorVisible} setClose={isCalculatorVisible}/>
         <CatFact props={catFactVisible} setClose={isCatFactVisible}/>
         <Clock props={clockVisible} setClose={isClockVisible}/>
+        <MotivationalQuote props={motivationalQuoteVisible} setClose={isMotivationalQuoteVisible} />
       </div>
     </div>
   )

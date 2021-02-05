@@ -6,7 +6,7 @@ const CatFact = (props) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
   const [isActive, setIsActive] = useState(false);
-  const [imageCount, setImageCount] = useState(0);
+  const [itemCount, setItemCount] = useState(0);
 
   if(props.props === true && isActive !== true){
     setIsActive(true)
@@ -46,13 +46,13 @@ const CatFact = (props) => {
       <Draggable handle=".handle">
         <div className="cat-fact-div">
           <ul className="cat-facts">
-            {<li key={items[imageCount]._id} className="cat-fact">
+            {<li key={items[itemCount]._id} className="cat-fact">
               <div className="cat-fact-x-button-div handle">
                 <p className="cat-fact-title"><strong>CatFact</strong></p>
-                <button className="cat-fact-x-button" onClick={() => {props.setClose(false); setImageCount(imageCount === 4 ? 0 : imageCount + 1)}}><span className="cat-fact-x-button-text">x</span></button>
+                <button className="cat-fact-x-button" onClick={() => {props.setClose(false); setItemCount(itemCount === 4 ? 0 : itemCount + 1)}}><span className="cat-fact-x-button-text">x</span></button>
               </div>
               <div className="cat-fact-text">
-                {items[imageCount].text}
+                {items[itemCount].text}
               </div>
             </li>}
           </ul>

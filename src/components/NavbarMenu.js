@@ -39,8 +39,9 @@ const NavbarMenu = (props) => {
         onClose={handleClose}
       >
         <MenuItem onClick={() => {props.calculatorVisibility(true); handleClose()}}>Calculator</MenuItem>
-        <MenuItem onClick={() => {props.clockVisibility(true); handleClose()}}>Clock</MenuItem>
         <MenuItem onClick={() => {props.catFactVisibility(true); handleClose()}}>Cat Fact</MenuItem>
+        <MenuItem onClick={() => {props.clockVisibility(true); handleClose()}}>Clock</MenuItem>
+        <MenuItem onClick={() => {props.motivationalQuoteVisibility(true); handleClose()}}>Motivational Quote</MenuItem>
       </Menu>
     </div>
   );
