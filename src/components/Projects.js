@@ -4,6 +4,7 @@ import { Typography } from '@material-ui/core';
 
 const Projects = () => {
   return (
+    <Card id="projects-container">
     <div className="Projects">
       <h2><u>Projects</u></h2>
       <div className="project-cards">
@@ -33,7 +34,7 @@ const Projects = () => {
             <CardContent>
               <h3>World of Webscraping</h3>
               <img className="project-img" src="https://i.imgur.com/xlXJVp3.png" alt="project called World of Webscraping"></img>
-              <p className="source-code">(<a href="#">source code</a>)</p>
+              <p className="source-code">(<a href="https://github.com/JackStunning/capstoneProject">source code</a>)</p>
               <div className="project-content">
                 <div className="project-content-text project-content-skills">
                   <h5>Skills</h5>
@@ -74,6 +75,7 @@ const Projects = () => {
         </div>
       </div>
     </div>
+    </Card>
   )
 }
   

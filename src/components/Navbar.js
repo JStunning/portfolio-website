@@ -33,7 +33,7 @@ const Navbar = () => {
   }
 
   return (
-    <div>
+    <>
       <AppBar position="fixed">
         <Toolbar variant="dense" className="Toolbar">
           <NavbarMenu 
@@ -53,7 +53,7 @@ const Navbar = () => {
         <Clock props={clockVisible} setClose={isClockVisible}/>
         <MotivationalQuote props={motivationalQuoteVisible} setClose={isMotivationalQuoteVisible} />
       </div>
-    </div>
+    </>
   )
 }
 

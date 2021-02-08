@@ -26,6 +26,7 @@ const Calculator = (props) => {
         { 
           let ans=''; 
           try { 
+              // eslint-disable-next-line 
               ans = eval(question); 
             } 
             catch(err) 
@@ -41,7 +42,6 @@ const Calculator = (props) => {
         break;
       } 
       case 'Clear': { 
-  
         // if it's the Clears sign, just clean our  
         // question and answer in the state 
         setQuestion('')
@@ -66,7 +66,7 @@ const Calculator = (props) => {
 
   if(isActive === true){
     return (
-      <Draggable handle=".handle">
+      <Draggable handle=".handle" bounds={{top: 0, left: 0, right: 1000, bottom: 500}}>
         <div className="Calculator">
           <div className="calculator-x-button-div handle">
             <p className="calculator-title"><strong>Calculator</strong></p>

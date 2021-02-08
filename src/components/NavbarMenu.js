@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton'
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -24,13 +23,15 @@ const NavbarMenu = (props) => {
     setAnchorEl(null);
   };
 
+  const alertMessage = () => {
+    alert("This is broken on mobile, cannot close opened tools.");
+  }
+
   return (
     <div>
-      <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
-        <IconButton edge="start" aria-label="menu">
-          <MenuIcon className={classes.menuButton} />
-        </IconButton>
-      </Button>
+      <IconButton edge="start" aria-label="menu" onClick={handleClick}>
+        <MenuIcon className={classes.menuButton} onClick={alertMessage} />
+      </IconButton>
       <Menu
         id="simple-menu"
         anchorEl={anchorEl}

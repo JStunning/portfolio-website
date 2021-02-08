@@ -35,15 +35,13 @@ const MotivationalQuote = (props) => {
       )
   }, [])
 
-  console.log("motQ items", items)
-
   if (error) {
     return <div>Error: {error.message}</div>;
   } else if (!isLoaded) {
     return <div>Loading...</div>;
   } else if(isActive === true){
     return (
-      <Draggable handle=".handle">
+      <Draggable handle=".handle" bounds={{top: 0, left: 0, right: 1000, bottom: 600}}>
         <div className="MotivationalQuote">
           <ul className="motivational-quotes">
             {<li key={itemCount} className="motivational-quote">

@@ -16,7 +16,7 @@ const Clock = (props) => {
 
   if(isActive === true){
     return (
-      <Draggable handle=".handle">
+      <Draggable handle=".handle" bounds={{top: 0, left: 0, right: 1000, bottom: 600}}>
         <div className="Clock">
           <div className="clock-x-button-div handle">
             <p className="clock-title"><strong>Clock</strong></p>
