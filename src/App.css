@@ -485,7 +485,7 @@ h2 {
 
   /* Skills */
   #skills-container {
-    width: 98vw;
+    width: 100vw;
     margin: 0;
   }
 
@@ -514,7 +514,7 @@ h2 {
 
   /* Jobs */
   #jobs-container {
-    width: 98vw;
+    width: 100vw;
     margin: 0;
   }
 
@@ -539,7 +539,7 @@ h2 {
 
   /* Projects */
   #projects-container {
-    width: 98vw;
+    width: 100vw;
     margin: 0;
     text-align: center;
   }
