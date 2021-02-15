@@ -28,7 +28,7 @@ const NavbarMenu = (props) => {
   }
 
   return (
-    <div>
+    <div className="burger-menu">
       <IconButton edge="start" aria-label="menu" onClick={handleClick}>
         <MenuIcon className={classes.menuButton} onClick={alertMessage} />
       </IconButton>

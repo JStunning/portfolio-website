@@ -466,6 +466,10 @@ h2 {
     padding: 0;
   }
 
+  .burger-menu {
+    display: none;
+  }
+
   .App-showcase {
     margin: 0;
     padding: 0;
