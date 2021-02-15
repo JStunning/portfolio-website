@@ -23,14 +23,10 @@ const NavbarMenu = (props) => {
     setAnchorEl(null);
   };
 
-  const alertMessage = () => {
-    alert("This is broken on mobile, cannot close opened tools.");
-  }
-
   return (
     <div className="burger-menu">
       <IconButton edge="start" aria-label="menu" onClick={handleClick}>
-        <MenuIcon className={classes.menuButton} onClick={alertMessage} />
+        <MenuIcon className={classes.menuButton} />
       </IconButton>
       <Menu
         id="simple-menu"
