@@ -1,28 +1,23 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import AppShowcase from './components/AppShowcase'
-import Skills from './components/Skills';
-import Jobs from './components/Jobs';
-import Projects from './components/Projects';
 import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import ContactPage from './pages/ContactPage'
+import { BrowserRouter as Router, Route, Redirect} from 'react-router-dom'
 
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <Router>
       <Navbar />
-      <AppShowcase />
-      <div>
-        <Skills />
-      </div>
-      <div>
-        <Jobs />
-      </div>
-      <div>
-        <Projects />
+      <div className="App">
+        <Route exact path="/portfolio-website/" component={HomePage} />
+        <Route exact path='/portfolio-website/contact'>
+          <ContactPage />
+        </Route>
+        {/* <Redirect path="/" to='/portfolio-website/' /> */}
       </div>
       <Footer />
-    </div>
+    </Router>
   );
 }
 

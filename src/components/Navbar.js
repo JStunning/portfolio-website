@@ -43,16 +43,16 @@ const Navbar = () => {
             motivationalQuoteVisibility={isMotivationalQuoteVisible}
           />
           <Typography variant="h6" color="inherit">
-            Stunning
+            <a href="/portfolio-website" className="home-logo"> Stunning </a>
           </Typography>
         </Toolbar>
       </AppBar>
-      <div>
+      <>
         <Calculator props={calculatorVisible} setClose={isCalculatorVisible}/>
         <CatFact props={catFactVisible} setClose={isCatFactVisible}/>
         <Clock props={clockVisible} setClose={isClockVisible}/>
         <MotivationalQuote props={motivationalQuoteVisible} setClose={isMotivationalQuoteVisible} />
-      </div>
+      </>
     </>
   )
 }

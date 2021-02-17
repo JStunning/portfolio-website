@@ -1,6 +1,7 @@
 body {
   background-color: #3f51b5;
-  width: 98vw;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 html {
@@ -20,7 +21,7 @@ h2 {
 
 .App {
   text-align: center;
-  width: 100vw;
+  width: 100%;
   padding: 0;
   margin: 0;
 }
@@ -33,6 +34,11 @@ h2 {
 
 .Burger-button {
   padding-left: 50%;
+}
+
+.home-logo {
+  color: white;
+  text-decoration: none;
 }
 
 /* Showcase */
@@ -63,7 +69,16 @@ h2 {
 }
 
 .App-showcase p {
-  padding: 25% 5% 5% 5%;
+  padding: 25% 5% 1% 5%;
+}
+
+.contact-button {
+  padding: 8px;
+  color: white;
+  background-color: #3f51b5;
+  border: 2px solid orange;
+  font-size: 28px;
+  margin-bottom: 2%;
 }
 
 #chevron {
@@ -417,6 +432,39 @@ h2 {
   padding: 5%;
 }
 
+/* Contact */
+.ContactPage {
+  width: 100%;
+  margin-bottom: 13.5%;
+}
+
+.contact {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact p {
+  margin: 0;
+  padding-top: 0;
+}
+
+.me-irl-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5%;
+}
+
+.me-irl {
+  padding: 0 2% 0 2%;
+}
+
+.contact-card-content-row {
+  padding: 0 2% 0 2%;
+}
+
 /* Footer */
 .Footer {
   position: absolute;
@@ -425,12 +473,13 @@ h2 {
   padding-top: 10px;
   border-top: 2px solid #2a3575;
   border-radius: 2%;
+  text-align: center;
 }
 
 .icon {
   color: white;
   text-decoration: none;
-  padding: 0 10px 0 10px;
+  margin: 0 1% 0 1%;
 }
 
 /* Mobile Friendly */
@@ -454,7 +503,6 @@ h2 {
 
   .App {
     width: 80vw;
-    height: 100vh;
     margin: 0;
     padding: 0;
   }
@@ -483,7 +531,7 @@ h2 {
     padding-top: 30%;
   }
 
-  .App-showcase p {
+  .App-showcase .showcase-text {
     padding: 25vh 5% 5% 5%;
   }
 
@@ -578,7 +626,26 @@ h2 {
   .Calculator {
     margin-top: 15%;
   }
+
+  /* Contact */
+  .ContactPage {
+    width: 100%;
+  }
+
+  .contact {
+    width: 100vw;
+    margin: 0;
+  }
+
+  .contact p {
+    margin: 0;
+    padding-top: 2%;
+  }
   
+  .me-irl-info {
+    display: block;
+  }
+
   /* Footer */
   .Footer {
     display: flex;
