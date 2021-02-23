@@ -523,6 +523,10 @@ h2 {
     font-size: 40px !important;
   }
 
+  .home-logo {
+    font-size: 48px;
+  }
+
   .App-showcase .showcase-text {
     padding: 45vh 5% 5% 5%;
   }
