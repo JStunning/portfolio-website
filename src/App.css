@@ -503,6 +503,160 @@ h2 {
 
 /* Mobile Friendly */
 @media only screen and (max-width: 1030px) {
+  p {
+    font-size: 36px !important;
+  }
+
+  h2 {
+    font-size: 52px !important;
+  }
+
+  h3 {
+    font-size: 48px !important;
+  }
+
+  h4 {
+    font-size: 44px !important;
+  }
+
+  h5 {
+    font-size: 40px !important;
+  }
+
+  .App-showcase .showcase-text {
+    padding: 45vh 5% 5% 5%;
+  }
+
+  #skills-container {
+    width: 100vw;
+    margin: 0;
+  }
+
+  .skills-cards {
+    flex-direction: column;
+    box-shadow: none;
+  }
+
+  .skill {
+    max-width: 100px;
+    min-width: 100%;
+    margin-top: 5%;
+    box-shadow: none;
+  }
+
+  .skill-div {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .skills-card-content {
+    flex-direction: column;
+  }
+
+  /* Jobs */
+  #jobs-container {
+    width: 100vw;
+    margin: 0;
+  }
+
+  .jobs-cards {
+    flex-direction: column;
+    box-shadow: none;
+  }
+
+  .job-div {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .job {
+    max-width: 100px;
+    min-width: 100%;
+    margin-top: 5%;
+    box-shadow: none;
+  }
+
+  /* Projects */
+  #projects-container {
+    width: 100vw;
+    margin: 0;
+    text-align: center;
+  }
+
+  .project-cards {
+    flex-direction: column;
+  }
+
+  .project-div {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .project {
+    max-width: 100px;
+    min-width: 100%;
+    margin-top: 5%;
+    box-shadow: none;
+  }
+
+  .project-img {
+    max-width: 95%;
+  }
+
+  .project-content-skills .project-content-about {
+    margin: 0;
+    flex-grow: none;
+  }
+
+  .ContactPage {
+    width: 100%;
+  }
+
+  .contact {
+    width: 100vw;
+    margin: 0;
+  }
+
+  .contact p {
+    margin: 0;
+    padding-top: 2%;
+    font-size: 12px;
+  }
+
+  .contact-card-content-row p {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .me-irl-info {
+    display: block;
+  }
+
+  .me-irl {
+    margin: 0;
+  }
+
+  .me-irl img {
+    border: 5px solid #282c34;
+    border-radius: 2%;
+    width: 180px;
+    margin: 5% 0 5% 0;
+    padding: 0;
+  }
+
+  .home-button {
+    margin-top: 15%;
+  }
+
+}
+@media only screen and (max-width: 770px) {
   body {
     background-color: #3f51b5;
     width: 98vw;
