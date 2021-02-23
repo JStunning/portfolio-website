@@ -14,7 +14,6 @@ const App = () => {
         <Route exact path='/portfolio-website/contact'>
           <ContactPage />
         </Route>
-        {/* <Redirect path="/" to='/portfolio-website/' /> */}
       </div>
       <Footer />
     </Router>

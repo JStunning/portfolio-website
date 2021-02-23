@@ -5,7 +5,7 @@ import { Typography } from '@material-ui/core';
 const Projects = () => {
   return (
     <Card id="projects-container">
-    <div className="Projects">
+    <div id="Projects" className="Projects">
       <h2><u>Projects</u></h2>
       <div className="project-cards">
         <div className="project-div">

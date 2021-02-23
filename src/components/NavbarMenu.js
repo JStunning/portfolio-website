@@ -35,10 +35,13 @@ const NavbarMenu = (props) => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={() => {props.calculatorVisibility(true); handleClose()}}>Calculator</MenuItem>
+        <MenuItem><a href="#Skills" className="burger-link">Skills</a></MenuItem>
+        <MenuItem><a href="#Jobs" className="burger-link">Jobs</a></MenuItem>
+        <MenuItem><a href="#Projects" className="burger-link">Projects</a></MenuItem>
+        {/* <MenuItem onClick={() => {props.calculatorVisibility(true); handleClose()}}>Calculator</MenuItem>
         <MenuItem onClick={() => {props.catFactVisibility(true); handleClose()}}>Cat Fact</MenuItem>
         <MenuItem onClick={() => {props.clockVisibility(true); handleClose()}}>Clock</MenuItem>
-        <MenuItem onClick={() => {props.motivationalQuoteVisibility(true); handleClose()}}>Motivational Quote</MenuItem>
+        <MenuItem onClick={() => {props.motivationalQuoteVisibility(true); handleClose()}}>Motivational Quote</MenuItem> */}
       </Menu>
     </div>
   );

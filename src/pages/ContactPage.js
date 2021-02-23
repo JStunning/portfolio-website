@@ -9,8 +9,6 @@ class ContactPage extends React.Component {
       <div className="App-showcase">
         <div className="showcase-overlay">
           <div className="ContactPage">
-              <Card className="contact">
-                <CardContent>
                   <h2><u>Jack Dunning</u></h2>
                   <h4>Contact info</h4>
                   <div className="me-irl-info">
@@ -24,8 +22,6 @@ class ContactPage extends React.Component {
                       <Typography><strong>Github:</strong> <br />  https://github.com/JackStunning</Typography>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
           </div>
         </div>
       </div>

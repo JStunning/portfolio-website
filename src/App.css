@@ -36,6 +36,11 @@ h2 {
   padding-left: 50%;
 }
 
+.burger-link {
+  color: black;
+  text-decoration: none;
+}
+
 .home-logo {
   color: white;
   text-decoration: none;
@@ -438,31 +443,45 @@ h2 {
   margin-bottom: 13.5%;
 }
 
-.contact {
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.contact p {
-  margin: 0;
-  padding-top: 0;
-}
-
 .me-irl-info {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 5%;
+  margin: 0;
+  margin-top: 2.5%;
+  padding: -10% 2% 0 2%;
+  width: 100%;
 }
 
 .me-irl {
-  padding: 0 2% 0 2%;
+  margin-right: 10%;
 }
 
-.contact-card-content-row {
-  padding: 0 2% 0 2%;
+.me-irl img {
+  border: 5px solid #282c34;
+  border-radius: 2%;
+  width: 280px;
+}
+
+.contact-card-content-row p {
+  padding: 0;
+  margin-left: 10%;
+  padding-bottom: 5%;
+  font-size: 24px;
+}
+
+.contact-card-content-row a {
+  color: white;
+  text-decoration: none;
+}
+
+.home-button {
+  padding: 8px;
+  color: white;
+  background-color: #3f51b5;
+  border: 2px solid orange;
+  font-size: 28px;
+  margin-top: 9.8%;
 }
 
 /* Footer */
