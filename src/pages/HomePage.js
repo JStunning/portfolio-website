@@ -9,15 +9,15 @@ class HomePage extends Component {
     return (
       <div className="HomePage">
         <AppShowcase />
-        <div>
+        <>
           <Skills />
-        </div>
-        <div>
+        </>
+        <>
           <Jobs />
-        </div>
-        <div>
+        </>
+        <>
           <Projects />
-        </div>
+        </>
       </div>
     );
   }
