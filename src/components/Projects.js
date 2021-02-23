@@ -16,7 +16,7 @@ const Projects = () => {
               <p className="source-code">(<a href="https://github.com/JackStunning/textAdventure">source code</a>)</p>
               <div className="project-content">
                 <div className="project-content-text project-content-skills">
-                  <h5>Skills</h5>
+                  <h5>Technologies</h5>
                   <Typography>Html</Typography>
                   <Typography>Css</Typography>
                   <Typography>Jquery</Typography>
@@ -37,7 +37,7 @@ const Projects = () => {
               <p className="source-code">(<a href="https://github.com/JackStunning/capstoneProject">source code</a>)</p>
               <div className="project-content">
                 <div className="project-content-text project-content-skills">
-                  <h5>Skills</h5>
+                  <h5>Technologies</h5>
                   <Typography>MongoDB</Typography>
                   <Typography>Express</Typography>
                   <Typography>React</Typography>
@@ -60,7 +60,7 @@ const Projects = () => {
               <p className="source-code">(<a href="https://github.com/n0remac/Pyweek">source code</a>)</p>
               <div className="project-content">
                 <div className="project-content-text project-content-skills">
-                  <h5>Skills</h5>
+                  <h5>Technologies</h5>
                   <Typography>Python</Typography>
                   <Typography>PyGame</Typography>
                   <Typography>Python Arcade</Typography>
