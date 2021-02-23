@@ -732,8 +732,6 @@ h2 {
     padding: 25vh 5% 5% 5%;
   }
 
-  
-
   /* Contact */
   .ContactPage {
     width: 100%;
@@ -785,7 +783,7 @@ h2 {
 
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 375px) {
   h2 {
     font-size: 32px !important;
   }
@@ -836,4 +834,16 @@ h2 {
     margin-top: 3%;
   }
 
+  .project-content {
+    display: block;
+  }
+
+  .project-content-skills {
+    margin: 0;
+  }
+
+  .project-content-about {
+    margin: 0;
+    margin-top: 5%;
+  }
 }
