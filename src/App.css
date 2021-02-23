@@ -619,6 +619,10 @@ h2 {
     padding: 5% 5% 5% 5%;
   }
 
+  .me-irl img {
+    width: 150px;
+  }
+
   .contact-card-content-row p {
     padding: 0;
     font-size: 12px;
